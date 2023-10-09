@@ -1,25 +1,27 @@
-import logo from './logo.svg';
+import PhotoHomeDisplay from './PhotoHomeDisplay'
+import AboutMe from './AboutMe'
 import './App.css';
+import { useEffect } from 'react';
+import { Link } from 'react-scroll'
+
 
 function App() {
+  const handeClick = () => {
+
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <div id="phd1">
+        <PhotoHomeDisplay />
+        <Link to="ab1" smooth={true} duration={500} class="scroll-down" address="true"></Link>
+      </div>
+      <div id="ab1">
+        <AboutMe />
+      </div>
     </div>
   );
-}
+
+};
 
 export default App;
