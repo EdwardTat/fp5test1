@@ -1,7 +1,7 @@
 body {
   height: 100vh;
   width: 100vw;
-  background-color: black;
+  background-color: #434242;
   margin: 0rem;
   overflow-x: hidden;
   overflow-y: visible;
@@ -11,7 +11,7 @@ body {
   position: absolute;
   bottom: 5%;
   left: 50%;
-  margin-left: -16px;
+  margin-left: -8px;
   display: block;
   width: 32px;
   height: 32px;
@@ -43,7 +43,7 @@ body {
 }
 
 .scroll-down:before:hover {
-  animation: bounce 2s;
+  animation: bounce 3s;
 }
 
 @keyframes bounce {
@@ -57,10 +57,75 @@ body {
   }
 
   40% {
-    transform: translateY(-5px);
+    transform: translateY(-14px);
   }
 
   60% {
-    transform: translateY(-2px);
+    transform: translateY(-6px);
+  }
+}
+
+.section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.scroll-up {
+  position: absolute;
+  bottom: -10%;
+  margin-left: -8px;
+  left: 50%;
+  display: block;
+  width: 32px;
+  height: 32px;
+  border: 2px solid #FFF;
+  background-size: 14px auto;
+  border-radius: 50%;
+  z-index: 2;
+  scale: 3 3;
+
+}
+
+.scroll-up:hover {
+  animation: bounceUp 2s;
+}
+
+.scroll-up:before {
+  bottom: 5%;
+  left: 50%;
+  transform: rotate(135deg);
+  margin-left: 8px;
+  margin-top: 8px;
+  display: block;
+  width: 12px;
+  height: 12px;
+  content: "";
+  border: 2px solid white;
+  border-width: 0px 0 2px 2px;
+}
+
+.scroll-up:before:hover {
+  animation: bounceUp 4s;
+}
+
+@keyframes bounceUp {
+
+  0%,
+  100%,
+  20%,
+  50%,
+  80% {
+    transform: translateY(0);
+  }
+
+  40% {
+    transform: translateY(14px);
+  }
+
+  60% {
+    transform: translateY(6px);
   }
 }

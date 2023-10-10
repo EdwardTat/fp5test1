@@ -26,57 +26,46 @@ body {
     object-position: 100% center;
 }
 
-.fancy-text {
-    font-family: 'Your Fancy Font', cursive;
-    /* Replace 'Your Fancy Font' with your chosen font */
-    color: white;
-    text-align: center;
-    font-size: 24px;
-
-    top: 300px
-        /* Adjust the font size as needed */
-}
-
-/* Center the text both horizontally and vertically */
-.textposition1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: 65%;
-    /* Ensure the container takes up the full viewport height */
-    margin: 0;
-    /* Remove default margin */
-}
 
 .container {
     display: flex;
     min-height: 100vh;
 }
 
+.title2 {
+    color: rgb(254, 252, 255);
+    font-size: 10em;
+    font-weight: bold;
+    font-family: 'Fira Sans', sans-serif;
+}
+
 /* Title styles */
 .title1 {
-    user-select: none;
     margin: 0;
     padding: 0;
-    top: 8%;
-    left: 45%;
-    right: 45%;
+    top: 5%;
+    left: 40%;
+    white-space: nowrap;
     position: absolute;
-    text-align: center;
-    /* Center text horizontally */
-    justify-content: center;
-    font-family: 'Fira Sans', sans-serif;
-    /* Replace 'Your Fancy Font' with your chosen fancy font */
     color: rgb(254, 252, 255);
     /* White text color */
-    font-size: 10em;
+    font-size: 13em;
     /* Adjust the font size as needed */
-    font-weight: bold;
-    letter-spacing: 3px;
-    /* Add some letter spacing for emphasis */
-    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
-    /* Add a subtle shadow */
+    font-weight: 900;
+    line-height: 0.3;
+}
+
+.jdvb {
+    display: inline-block;
+    color: BLACK;
+    white-space: nowrap;
+}
+
+.jdvp {
+    position: absolute;
+    top: 95%;
+    left: 109%;
+    font-size: 95px;
 }
 
 section {
@@ -84,68 +73,4 @@ section {
     width: 100%;
     display: table;
 
-}
-
-.scroll-down {
-    opacity: 1;
-    -webkit-transition: all .5s ease-in 3s;
-    transition: all .5s ease-in 3s;
-}
-
-.scroll-down {
-    position: absolute;
-    bottom: 5%;
-    left: 50%;
-    margin-left: -16px;
-    display: block;
-    width: 32px;
-    height: 32px;
-    border: 2px solid #FFF;
-    background-size: 14px auto;
-    border-radius: 50%;
-    z-index: 2;
-    scale: 3 3;
-
-}
-
-.scroll-down:hover {
-    animation: bounce 2s;
-}
-
-.scroll-down:before {
-    position: absolute;
-    bottom: 5%;
-    left: 50%;
-    margin-left: -8px;
-    margin-bottom: 8px;
-    transform: rotate(-45deg);
-    display: block;
-    width: 12px;
-    height: 12px;
-    content: "";
-    border: 2px solid white;
-    border-width: 0px 0 2px 2px;
-}
-
-.scroll-down:before:hover {
-    animation: bounce 2s;
-}
-
-@keyframes bounce {
-
-    0%,
-    100%,
-    20%,
-    50%,
-    80% {
-        transform: translateY(0);
-    }
-
-    40% {
-        transform: translateY(-5px);
-    }
-
-    60% {
-        transform: translateY(-2px);
-    }
 }

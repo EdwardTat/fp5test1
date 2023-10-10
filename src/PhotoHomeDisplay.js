@@ -63,7 +63,8 @@ function PhotoHomeDisplay() {
     return (
         <div>
             <div class="container">
-                <div class="title1" draggable="false">Jimmy</div>
+                <div class="title1" draggable="false">
+                    <div class="jdvb">J</div>D<div class="jdvb">V</div> Photography</div>
             </div>
             <div class="container">
                 <div id="image-track" data-mouse-down-at="0" data-prev-percentage="0">
