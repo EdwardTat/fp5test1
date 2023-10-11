@@ -15,10 +15,10 @@ function App() {
         </div>
       </div>
       <div class="section">
-        <Link to="phd1" smooth={true} duration={500} class="scroll-up" address="true"></Link>
         <div id="ab1">
           <AboutMe />
         </div>
+        <Link to="phd1" smooth={true} duration={500} class="scroll-up" address="true"></Link>
 
       </div>
     </div>

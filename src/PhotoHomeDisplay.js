@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { useEffect } from 'react';
 
 import './PhotoHomeDisplay.css'
@@ -63,11 +63,11 @@ function PhotoHomeDisplay() {
     return (
         <div>
             <div class="container">
-                <div class="title1" draggable="false">
+                <div class="title1">
                     <div class="jdvb">J</div>D<div class="jdvb">V</div> Photography</div>
             </div>
             <div class="container">
-                <div id="image-track" data-mouse-down-at="0" data-prev-percentage="0">
+                <div id="image-track" data-mouse-down-at="0" data-prev-percentage="0" draggable="false">
                     <img class="image"
                         src={require('./apppictures/pw1.png')}
                         draggable="false" />
@@ -90,7 +90,7 @@ function PhotoHomeDisplay() {
             </div>
 
 
-        </div>
+        </div >
     );
 
 };

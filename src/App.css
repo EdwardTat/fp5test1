@@ -7,19 +7,22 @@ body {
   overflow-y: visible;
 }
 
+.c2 {
+  margin: 0 auto;
+}
+
 .scroll-down {
   position: absolute;
-  bottom: 5%;
+  bottom: 8%;
   left: 50%;
-  margin-left: -8px;
+  margin-left: -0.34vi;
   display: block;
-  width: 32px;
-  height: 32px;
-  border: 2px solid #FFF;
+  width: 1vi;
+  height: 1vi;
+  border: 0.12vi solid #FFF;
   background-size: 14px auto;
   border-radius: 50%;
-  z-index: 2;
-  scale: 3 3;
+  scale: 2 2;
 
 }
 
@@ -31,15 +34,15 @@ body {
   position: absolute;
   bottom: 5%;
   left: 50%;
-  margin-left: -8px;
-  margin-bottom: 8px;
+  margin-left: -0.25vi;
+  margin-bottom: 0.34vi;
   transform: rotate(-45deg);
   display: block;
-  width: 12px;
-  height: 12px;
+  width: 0.375vi;
+  height: 0.375vi;
   content: "";
-  border: 2px solid white;
-  border-width: 0px 0 2px 2px;
+  border: 0.12vi solid white;
+  border-width: 0 0 0.12vi 0.12vi;
 }
 
 .scroll-down:before:hover {
@@ -72,40 +75,41 @@ body {
   align-items: center;
 }
 
-
 .scroll-up {
   position: absolute;
-  bottom: -10%;
-  margin-left: -8px;
+  bottom: -90%;
   left: 50%;
+  margin-left: -0.34vi;
   display: block;
-  width: 32px;
-  height: 32px;
-  border: 2px solid #FFF;
+  width: 1vi;
+  height: 1vi;
+  border: 0.12vi solid #FFF;
   background-size: 14px auto;
   border-radius: 50%;
-  z-index: 2;
-  scale: 3 3;
+  scale: 2 2;
 
 }
+
+.scroll-up:before {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  margin-left: -0.25vi;
+  margin-bottom: 0.1vi;
+  transform: rotate(135deg);
+  display: block;
+  width: 0.375vi;
+  height: 0.375vi;
+  content: "";
+  border: 0.12vi solid white;
+  border-width: 0 0 0.12vi 0.12vi;
+}
+
 
 .scroll-up:hover {
   animation: bounceUp 2s;
 }
 
-.scroll-up:before {
-  bottom: 5%;
-  left: 50%;
-  transform: rotate(135deg);
-  margin-left: 8px;
-  margin-top: 8px;
-  display: block;
-  width: 12px;
-  height: 12px;
-  content: "";
-  border: 2px solid white;
-  border-width: 0px 0 2px 2px;
-}
 
 .scroll-up:before:hover {
   animation: bounceUp 4s;
